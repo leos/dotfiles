@@ -8,10 +8,6 @@ fi
 # Term color
 export TERM=xterm-256color
 
-# Beeswax
-export BIO_ROOT="${HOME}/beeswaxio"
-source /etc/profile.d/beeve_bash_init.sh
-
 # Platform-specific stuff
 export EDITOR='vim'
 export VISUAL='vim'

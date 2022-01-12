@@ -9,7 +9,11 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'osx' \
+  'ssh' \
+  'python' \
   'git' \
+  'syntax-highlighting' \
   'tmux' \
   'utility' \
   'prompt'

@@ -35,7 +35,7 @@
 
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-    # os_icon               # os identifier
+    os_icon                 # os identifier
     # context
     virtualenv
     dir                     # current directory
