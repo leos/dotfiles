@@ -1,0 +1,8 @@
+export ARCHFLAGS="-arch x86_64"
+export PATH=/usr/local/sbin:/usr/local/bin:$PATH
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+test -f ~/.bashrc && source ~/.bashrc
