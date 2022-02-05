@@ -3,7 +3,8 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$H
 ln -sf "${ZDOTDIR:-$HOME}/.zprezto/zlogin" $HOME/.zlogin
 ln -sf "${ZDOTDIR:-$HOME}/.zprezto/zshenv" $HOME/.zshenv
 
-BASEDIR=$(dirname $0)
+SCRIPT=$(readlink -f "$0")
+BASEDIR=$(dirname "$SCRIPT")
 
 ln -sf ${BASEDIR}/linux/personal_config/files/p10k.zsh.sh ${HOME}/.p10k.zsh
 ln -sf ${BASEDIR}/linux/personal_config/files/zpreztorc.sh ${HOME}/.zpreztorc
