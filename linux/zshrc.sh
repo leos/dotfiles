@@ -51,8 +51,6 @@ bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 bindkey -M vicmd "^[" vi-add-next
 
-export AWS_PROFILE="default"
-
 # History
 setopt INC_APPEND_HISTORY        # Share history between all sessions.
 
