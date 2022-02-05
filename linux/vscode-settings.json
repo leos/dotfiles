@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "**/*.pyc": true
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#81630e",
+    "titleBar.activeBackground": "#997510",
+    "titleBar.activeForeground": "#F6FBFB"
+  }
+}
