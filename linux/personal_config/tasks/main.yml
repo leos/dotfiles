@@ -1,12 +1,11 @@
-- name: ZSH Backports repo
-  apt_repository:
-    repo: ppa:jonathonf/backports
-  become: true
+# - name: ZSH Backports repo
+#   apt_repository:
+#     repo: ppa:jonathonf/backports
+#   become: true
 
 - name: Install packages
   apt:
     name:
-      - jsonlint
       - jq
       - zsh
     state: latest
@@ -45,7 +44,7 @@
 
 - name: Switch shell to zsh
   user:
-    name: vagrant
+    name: root
     shell: /usr/bin/zsh
   become: true
 
@@ -60,13 +59,13 @@
 
 - name: Set up VSCode dir
   file:
-    path: /home/vagrant/.vscode-server/data/Machine
+    path: /root/.vscode-remote/data/Machine
     state: directory
 
 - import_tasks: insertjson.yml
   vars:
     name: VSCode Machine Settings
-    path: /home/vagrant/.vscode-server/data/Machine/settings.json
+    path: /root/.vscode-remote/data/Machine/settings.json
     data:
       files.exclude:
         "**/*.pyc": true

@@ -8,10 +8,6 @@ fi
 # Term color
 export TERM=xterm-256color
 
-# Beeswax
-export BIO_ROOT="${HOME}/beeswaxio"
-source /etc/profile.d/beeve_bash_init.sh
-
 # Platform-specific stuff
 export EDITOR='vim'
 export VISUAL='vim'
@@ -54,8 +50,6 @@ bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 bindkey -M vicmd "^[" vi-add-next
-
-export AWS_PROFILE="default"
 
 # History
 setopt INC_APPEND_HISTORY        # Share history between all sessions.
