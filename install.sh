@@ -18,6 +18,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git --branch 0.29.0 ~/.fzf
 chsh --shell /usr/bin/zsh
 
 # git config
+git config --global advice.addEmptyPathspec false
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 git config --global pull.rebase true
 git config --global push.default current
