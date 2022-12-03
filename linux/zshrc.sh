@@ -37,6 +37,8 @@ alias ht="sudo htop"
 alias da="deactivate"
 alias rm="rm -rf"
 alias gcom="git checkout master"
+alias gra="git restore `git rev-parse --show-toplevel`"
+alias gras="git restore --staged `git rev-parse --show-toplevel`"
 
 # Snappy escape
 export KEYTIMEOUT=1
