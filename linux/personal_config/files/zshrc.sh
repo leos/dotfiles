@@ -39,7 +39,7 @@ alias rm="rm -rf"
 alias up="cd .."
 
 # git
-alias gcom="git checkout master"
+alias gcom="git checkout $(git symbolic-ref refs/remotes/origin/HEAD | cut -d'/' -f4)"
 
 # Snappy escape
 export KEYTIMEOUT=1
