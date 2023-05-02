@@ -58,11 +58,11 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Enable keyboard access for all controls/modals
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Disable OS X press-and-hold keys to increase key repeat rate.
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set up a fast key repeat rate.
-defaults write NSGlobalDomain KeyRepeat -int 0.02
+# defaults write NSGlobalDomain KeyRepeat -int 0.02
 # Decrease the delay until keys are repeated.
-defaults write NSGlobalDomain InitialKeyRepeat -int 12
+# defaults write NSGlobalDomain InitialKeyRepeat -int 12
 # Expand the Save panel by default in all applications
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 # Expand the Printer panel by default in all applications

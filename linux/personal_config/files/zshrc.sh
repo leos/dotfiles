@@ -36,6 +36,9 @@ alias lsa="ls -la"
 alias ht="sudo htop"
 alias da="deactivate"
 alias rm="rm -rf"
+alias up="cd .."
+
+# git
 alias gcom="git checkout master"
 
 # Snappy escape

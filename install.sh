@@ -12,7 +12,7 @@ ln -sf ${BASEDIR}/linux/personal_config/files/zpreztorc.sh ${HOME}/.zpreztorc
 ln -sf ${BASEDIR}/linux/personal_config/files/zshrc.sh ${HOME}/.zshrc
 
 # install fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git --branch 0.29.0 ~/.fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git --branch 0.40.0 ~/.fzf
 ~/.fzf/install --all --no-bash
 
 chsh --shell /usr/bin/zsh
