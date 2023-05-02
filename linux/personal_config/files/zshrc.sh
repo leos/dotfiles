@@ -39,7 +39,21 @@ alias rm="rm -rf"
 alias up="cd .."
 
 # git
-alias gcom="git checkout $(git symbolic-ref refs/remotes/origin/HEAD | cut -d'/' -f4)"
+function git_main_branch() {
+  command git rev-parse --git-dir &>/dev/null || return
+  local ref
+  for ref in refs/{heads,remotes/{origin,upstream}}/{main,trunk,mainline,default}; do
+    if command git show-ref -q --verify $ref; then
+      echo ${ref:t}
+      return
+    fi
+  done
+  echo master
+}
+
+function gcom() {
+  git checkout `git_main_branch`
+}
 
 # Snappy escape
 export KEYTIMEOUT=1
